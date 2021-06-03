@@ -224,6 +224,14 @@ void Adafruit_GFX::drawLine(int16_t x0, int16_t y0, int16_t x1, int16_t y1,
     }
 }
 
+// 画一个五边形 hmx
+void Adafruit_GFX::drawShapeHMX(int16_t x0, int16_t y0, int16_t x1, int16_t y1,int16_t x2, int16_t y2,int16_t x3, int16_t y3,int16_t x4, int16_t y4,uint16_t color) {
+    drawLine(x0, y0, x1, y1, color);
+    drawLine(x1, y1, x2, y2, color);
+    drawLine(x2, y2, x3, y3, color);
+    drawLine(x3, y3, x4, y4, color);
+    drawLine(x4, y4, x0, y0, color);
+}
 // Draw a circle outline
 void Adafruit_GFX::drawCircle(int16_t x0, int16_t y0, int16_t r,
         uint16_t color) {
