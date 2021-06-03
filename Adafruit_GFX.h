@@ -59,6 +59,7 @@ class Adafruit_GFX : public Print {
 	 drawEllipse(int16_t x1, int16_t y1, int16_t x2, int16_t y2, int16_t a, uint16_t color),
     drawTriangle(int16_t x0, int16_t y0, int16_t x1, int16_t y1,
       int16_t x2, int16_t y2, uint16_t color),
+    drawHexagon(int16_t x0,int16_t y0,int16_t x1,int16_t y1,int16_t x2,int16_t y2,int16_t x3,int16_t y3,int16_t x4,int16_t y4,int16_t x5,int16_t y5,uint16_t color),
     fillTriangle(int16_t x0, int16_t y0, int16_t x1, int16_t y1,
       int16_t x2, int16_t y2, uint16_t color),
     drawRoundRect(int16_t x0, int16_t y0, int16_t w, int16_t h,

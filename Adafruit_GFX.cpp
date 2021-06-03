@@ -175,7 +175,14 @@ void Adafruit_GFX::drawFastVLine(int16_t x, int16_t y,
     writeLine(x, y, x, y+h-1, color);
     endWrite();
 }
-
+void Adafruit_GFX::drawHexagon(int16_t x0,int16_t y0,int16_t x1,int16_t y1,int16_t x2,int16_t y2,int16_t x3,int16_t y3,int16_t x4,int16_t y4,int16_t x5,int16_t y5,uint16_t color){
+    drawLine(x0, y0, x1, y1, color);
+    drawLine(x1, y1, x2, y2, color);
+    drawLine(x2, y2, x3, y3, color);
+    drawLine(x3, y3, x4, y4, color);
+    drawLine(x4, y4, x5, y5, color);
+    drawLine(x5, y5, x0, y0, color);
+}
 // (x,y) is leftmost point; if unsure, calling function
 // should sort endpoints or call drawLine() instead
 void Adafruit_GFX::drawFastHLine(int16_t x, int16_t y,
